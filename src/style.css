@@ -1,0 +1,14 @@
+body {
+    font-family: 'Acme', sans-serif;
+
+
+}
+
+h1 {
+    background: #75a3b5;
+    text-align: center;
+}
+
+.container {
+    display: inline;
+}
