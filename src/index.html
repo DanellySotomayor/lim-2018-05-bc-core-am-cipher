@@ -9,16 +9,33 @@
   <body>
     <h1>SECRET MESSAGE</h1>
     <p>¡Codifica tu mensaje de una manera sencilla con el conocido Cifrado César!</p>
-    <label form='pin' >Ingresa la llave que cifrará tu mensaje</label>
-    <input type='text' id='key' value=''><br><br><br>
-    <textarea id='mensajePrincipal' rows='10' cols='30' required>Escribe aquí tu mensaje</textarea><br><br>
+    <!--Se ingresa los espacios utilizados para cifrar-->
+    <div class='indicaciones'>
+    <label for='pin' >Ingresa la llave que cifrará tu mensaje</label>
+    <input type='text' id='llave' placeholder='0'><br><br><br>
+    </div>
+
+    <!--Zona de ingreso del mensaje-->
+    <div id='texto'>
+    <textarea id='mensajePrincipal' rows='10' cols='30' placeholder='Escribe aquí tu mensaje'></textarea><br><br>
+    </div>
+
+    <!--Zona de botones-->
+    <div class='botones'>
     <input type='button' id='codificar' value='Codificar'>
-    <input type='button' id='decodificar' value='Decodificar'> <br> <br>
-    <textarea id='resultado' rows='10' cols='30'>Resultado</textarea> <br> <br></div>
+    <input type='button' id='decodificar' value='Decodificar'> 
     <input type='button' id='resetear' value='Resetear'>
+    </div>
+    <br> <br>
+    <!--Zona de resultado-->
+    <div id='root'> Aquí va tu resultado:
+      <p id = 'resultado'></p>
+    </div>
     <br><br>
-    <div id="root"></div>
-    <script src="cipher.js"></script> 
-    <script src="index.js"></script>
+
+    <!--Pie de página-->
+    <footer> Elaborado por Danelly Sotomayor</footer>
+    <script src='cipher.js'></script> 
+    <script src='index.js'></script>
   </body>
 </html>

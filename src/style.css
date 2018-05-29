@@ -1,7 +1,5 @@
 body {
     font-family: 'Acme', sans-serif;
-
-
 }
 
 h1 {
@@ -9,6 +7,15 @@ h1 {
     text-align: center;
 }
 
-.container {
-    display: inline;
+.indicaciones {
+    float: center;
+}
+
+.texto {
+    float: center;
+}
+
+.botones {
+    float: center;
+    display: block;
 }
