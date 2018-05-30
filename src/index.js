@@ -10,10 +10,10 @@
 
     //boton decodificar
     let decodificar = document.getElementById('decodificar');
-    codificar.addEventListener('click', () => {
+    decodificar.addEventListener('click', () => {
         let offset = parseInt(document.getElementById('llave').value);
-        let ingresaMensaje = document.getElementById('mensajePrincipal').value;
-        let encode = cipher.decode(offset, ingresaMensaje);
+        let ingresaMensajeDos = document.getElementById('mensajePrincipal').value;
+        let decode = cipher.decode(offset, ingresaMensajeDos);
         document.getElementById('resultado').innerHTML = decode;
 
     });
@@ -26,3 +26,4 @@
         document.getElementById('resultado').innerHTML = '';
    
      });
+     console.log(cipher.decode('1', 'bc'))
