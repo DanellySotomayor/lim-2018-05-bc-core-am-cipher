@@ -26,4 +26,3 @@
         document.getElementById('resultado').innerHTML = '';
    
      });
-     console.log(cipher.decode('1', 'bc'))

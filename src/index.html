@@ -1,44 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <title>Ceasar Cipher</title>
     <link href="https://fonts.googleapis.com/css?family=Ruda" rel="stylesheet">
-    <link rel='stylesheet' href='style.css'/>
-    <meta name='viewport' content='width=device-width,  initial-scale=1.0'>
+    <link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
   </head>
   <body>
-<section class='contenedor'>
     <h1>EL SECRETO DE CÉSAR</h1>
-    <p id='welcome'>¿Quieres enviar mensajes secretos a tus contactos? Usa el Cifrado de César, uno de los métodos de codificación más antiguos y sencillos: sólo se cambian las posiciones del alfabeto según tu elección. </p>
+    <p id="welcome">¿Quieres enviar mensajes secretos a tus contactos? Usa el Cifrado de César, uno de los métodos de codificación más antiguos y sencillos: sólo se cambian las posiciones del alfabeto según tu elección. </p>
 
     <!--Se ingresa los espacios utilizados para cifrar-->
-    <div class='indicaciones'>
-    <label for='pin' >Posiciones en el alfabeto: </label>
-    <input type='text' id='llave' placeholder='0'><br><br><br>
+    <div id="indicaciones">
+    <label for="pin" >Posiciones en el alfabeto: </label>
+    <input type="text" id="llave" placeholder="0"><br><br>
     </div>
 
     <!--Zona de ingreso del mensaje-->
-    <div class='texto'>
-    <textarea id='mensajePrincipal' rows='5' cols='60' placeholder='Escribe aquí tu mensaje'></textarea><br><br>
+    <div>
+    <textarea id="mensajePrincipal" rows="5" cols="60" placeholder="Escribe aquí tu mensaje"></textarea><br>
     </div>
 
     <!--Zona de botones-->
-    <div class='botones'>
-    <input type='button' id='codificar' value='Cifra'>
-    <input type='button' id='decodificar' value='Descifra'> 
-    <input type='button' id='resetear' value='Limpia'>
+    <div id="botones">
+    <input type="button" id="codificar" value="Cifra">
+    <input type="button" id="decodificar" value="Descifra"> 
+    <input type="button" id="resetear" value="Limpia">
     </div>
     <br>
     <!--Zona de resultado-->
-    <div id='root'>Aquí va tu resultado: <p id = 'resultado'></p>
+    <div id="root">Aquí va tu resultado: <p id = "resultado"></p>
     </div>
     <br>
     <br>
-  </section>
     <!--Pie de página-->
     <footer> Copyright © Danelly Sotomayor</footer>
-    <script src='cipher.js'></script> 
-    <script src='index.js'></script>
+    <script src="cipher.js"></script> 
+    <script src="index.js"></script>
   </body>
 </html>
