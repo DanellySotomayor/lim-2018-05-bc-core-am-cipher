@@ -1,21 +1,94 @@
+* {
+    box-sizing: border-box;
+  }
+
 body {
-    font-family: 'Acme', sans-serif;
+    font-family: 'Ruda', sans-serif;
+    color: #fcf9ff;
+    background: #0f0f0f;
 }
 
-h1 {
-    background: #75a3b5;
+h1, .indicaciones {
     text-align: center;
+    padding: 10px;
+    margin: flex;
 }
 
-.indicaciones {
-    float: center;
+#welcome, #root, footer {
+    text-align: center;
+    padding: 10px;
 }
 
-.texto {
-    float: center;
+footer {
+    background: #3a7999;
+    width: 100%;
+}
+
+#llave {
+    background: #dabdfc;
+    border-radius: 5px;
+    text-align: left;
+    width: 80px;
+}
+
+textarea {
+    background: #dabdfc;
+    border-radius: 8px;
+    width: 70%;
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .botones {
-    float: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#codificar, #decodificar, #resetear {
+    border: none;
+    background: #3a7999;
+    color: #f2f2f2;
+    font-family: inherit;
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    text-align: center;
+    width: 80px;
+    border-radius: 4px;
+    transition: all 500ms ease;
+}
+
+#codificar:hover, #decodificar:hover {
+    background: #7a256a;
+    border-radius: 5px;
+    transition-duration: all 1s ease; 
+}
+
+#resetear:hover {
+    background: #251835;
+    border-radius: 5px;
+    transition-duration: all 1s ease; 
+}
+
+#resultado {
+    font-size: 25px;
+    border-bottom: 2px solid;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
+}
+
+@media all and (max-width: 400px) {
+    .botones{
+        margin:0px;
+        padding:0px;
+        padding-left:5%;
+        display:block;
+        float:none;
+        text-align:left;
+    }
 }
