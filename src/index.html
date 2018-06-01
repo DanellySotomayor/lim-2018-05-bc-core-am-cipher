@@ -9,28 +9,28 @@
   </head>
   <body>
     <h1>EL SECRETO DE CÉSAR</h1>
-    <p id="welcome">¿Quieres enviar mensajes secretos a tus contactos? Usa el Cifrado de César, uno de los métodos de codificación más antiguos y sencillos: sólo se cambian las posiciones del alfabeto según tu elección. </p>
+    <p class= "texto welcome" id="welcome">¿Quieres codificar tus mensajes? Usa el <a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar" target="_blank">Cifrado de César</a>, uno de los métodos de codificación y decodificación más antiguos y sencillos de la historia. </p>
 
     <!--Se ingresa los espacios utilizados para cifrar-->
-    <div id="indicaciones">
-    <label for="pin" >Posiciones en el alfabeto: </label>
+    <div class= "texto indicaciones" id="indicaciones">
+    <label for="pin" >N° de posiciones en el alfabeto: </label>
     <input type="text" id="llave" placeholder="0"><br><br>
     </div>
 
-    <!--Zona de ingreso del mensaje-->
+    <!--Zona de ingreso del mensaje-->  
     <div>
-    <textarea id="mensajePrincipal" rows="5" cols="60" placeholder="Escribe aquí tu mensaje"></textarea><br>
+    <textarea class= "texto mensaje" id="mensajePrincipal" rows="5" cols="60" placeholder="ESCRIBE AQUI tu mensaje secreto. ¡No olvides ingresar arriba el número de posiciones que quieres mover!"></textarea><br>
     </div>
 
     <!--Zona de botones-->
     <div id="botones">
-    <input type="button" id="codificar" value="Cifra">
-    <input type="button" id="decodificar" value="Descifra"> 
-    <input type="button" id="resetear" value="Limpia">
+    <input class= "boton codificar" type="button" id="codificar" value="Cifra">
+    <input class= "boton decodificar" type="button" id="decodificar" value="Descifra"> 
+    <input class= "boton resetear" type="button" id="resetear" value="Limpia">
     </div>
     <br>
     <!--Zona de resultado-->
-    <div id="root">Aquí va tu resultado: <p id = "resultado"></p>
+    <div class= "texto root" id="root">Tu mensaje está listo para ser copiado: <p id = "resultado"></p>
     </div>
     <br>
     <br>
