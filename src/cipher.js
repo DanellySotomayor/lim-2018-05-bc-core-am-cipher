@@ -45,15 +45,15 @@ window.cipher = {
       return mensajeDescifrado;
   },
 
-  createCipherWithOffset(offset) {
-    let objetoSolicitado = {
-      encode:(string) => 
-        cipher.encode(offset, string),
+  createCipherWithOffset(offset) { //offset fijo
+    let objetoSolicitado = { //declaramos un objeto con dos métodos
+      encode:(string) =>  //método o función uno
+        cipher.encode(offset, string), 
 
-      decode:(string) => 
+      decode:(string) => //método o función dos
         cipher.decode(offset, string)
     }
-    return objetoSolicitado;
+    return objetoSolicitado; //la función createCipherWithOffset retorna el objeto objetoSolicitado. Siguiendo el ejemplo de Shiro.
   }
 
 }

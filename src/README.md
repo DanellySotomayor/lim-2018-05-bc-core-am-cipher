@@ -25,7 +25,7 @@ El primer proyecto solicitado en Laboratoria es una aplicación para poder cifra
 * Al ser un usuario joven, busca acceder a sus aplicaciones de manera rápida, por lo que se planteó una  interfaz sencilla e intuitiva.
 * Cuenta con un cuadro para colocar el número de espacios a usar para cifrar el mensaje, un cuadro de texto para ingresar los textos a cifrar y descifrar, tres botones (Cifrar, Descifrar y Limpiar) y un espacio donde muestra el resultado.
 * Asimismo, cuenta con 3 botones que se usarán según el objetivo del usuario: Codificar, Decodificar y Resetear.
-* El color oscuro del fondo se utilizó debido a la consulta previa que se realizó, en donde posibles usuarios indicaron que usarían con mayor frecuencia esta aplicación en horarios nocturnos.
+* El color oscuro del fondo se utilizó debido a la consulta previa que se realizó, en donde posibles usuarios indicaron que usarían con mayor frecuencia esta aplicación en horarios nocturnos. Asimismo, se utilizó el color Violeta, por ser el color del año 2018 según Pantone.
 
 ### Modo de uso
 **Cifrado:**
