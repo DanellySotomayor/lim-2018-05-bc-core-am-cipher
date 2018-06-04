@@ -7,15 +7,15 @@ window.cipher = {
         let codigoLetra = string.charCodeAt(lista); //convierte a codigo ascii cada letra ingresada
         if (codigoLetra>=65 && codigoLetra<=90) { //tomamos el rango del alfabeto en mayúscula para operar la fórmula siguiente
           nuevoCaracter = String.fromCharCode((codigoLetra - 65 + key)%26 + 65); //fórmula que cifra el código ascii según el offset
-          mensajeCifrado += nuevoCaracter; 
+          mensajeCifrado += nuevoCaracter; //retorno de la letra cifrada
         } else if (codigoLetra >= 97 && codigoLetra <= 122) {
-          nuevoCaracter = String.fromCharCode((codigoLetra - 97 + key)%26 + 97)
-          mensajeCifrado += nuevoCaracter;//devuelve el nuevo caracter en string
+          nuevoCaracter = String.fromCharCode((codigoLetra - 97 + key)%26 + 97) //rango en letras minúsculas
+          mensajeCifrado += nuevoCaracter;
         } else if (codigoLetra >= 48 && codigoLetra <= 57) {
-          nuevoCaracter = String.fromCharCode((codigoLetra - 48 + key)%10 + 48)
-          mensajeCifrado += nuevoCaracter;//devuelve el nuevo caracter en string
+          nuevoCaracter = String.fromCharCode((codigoLetra - 48 + key)%10 + 48) //rango en números
+          mensajeCifrado += nuevoCaracter;
         } else {
-          nuevoCaracter = String.fromCharCode(codigoLetra);
+          nuevoCaracter = String.fromCharCode(codigoLetra); //
           mensajeCifrado += nuevoCaracter;
           }
       }
@@ -48,10 +48,10 @@ window.cipher = {
   createCipherWithOffset(offset) { //offset fijo
     let objetoSolicitado = { //declaramos un objeto con dos métodos
       encode:(string) =>  //método o función uno
-        cipher.encode(offset, string), 
+        cipher.encode(offset, string), //funcion encode indicada arriba
 
       decode:(string) => //método o función dos
-        cipher.decode(offset, string)
+        cipher.decode(offset, string) //funcion decode indicada arriba
     }
     return objetoSolicitado; //la función createCipherWithOffset retorna el objeto objetoSolicitado. Siguiendo el ejemplo de Shiro.
   }

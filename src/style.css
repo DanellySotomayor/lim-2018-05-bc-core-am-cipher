@@ -90,6 +90,7 @@ textarea {
   margin-right: auto;
 }
 
+/*para convertir a responsive en pantallas de 400px a menos*/
 @media all and (max-width: 400px) {
   #botones{
     margin:0px;
