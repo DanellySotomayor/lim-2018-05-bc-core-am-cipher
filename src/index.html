@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <title>Ceasar Cipher</title>
@@ -9,33 +9,33 @@
   </head>
   <body>
     <h1>EL SECRETO DE CÉSAR</h1>
-    <p class= "texto welcome" id="welcome">¿Quieres codificar tus mensajes? Usa el <a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar" target="_blank">Cifrado de César</a>, uno de los métodos de codificación y decodificación más antiguos y sencillos de la historia. </p>
-
+    <p class= "texto welcome" id="welcome">¿Quieres enviar mensajes codificados a tus amigos? Usa el <a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar" target="_blank">Cifrado de César</a>, uno de los métodos de codificación y decodificación más antiguos y sencillos de la historia. </p>
+    <br>
     <!--Se ingresa los espacios utilizados para cifrar-->
     <div class= "texto indicaciones" id="indicaciones">
-    <label for="pin" >N° de posiciones en el alfabeto: </label>
-    <input type="text" id="llave" placeholder="0"><br><br>
+      <label for="pin" >N° de posiciones en el alfabeto: </label>
+      <input type="text" id="llave" placeholder="0"><br><br>
     </div>
 
     <!--Zona de ingreso del mensaje-->  
     <div>
-    <textarea class= "texto mensaje" id="mensajePrincipal" rows="5" cols="60" placeholder="ESCRIBE AQUI tu mensaje secreto. ¡No olvides ingresar arriba el número de posiciones que quieres mover!"></textarea><br>
+      <textarea class= "texto mensaje" id="mensajePrincipal" rows="5" cols="50" placeholder="ESCRIBE AQUI tu mensaje secreto. ¡No olvides ingresar arriba el número de posiciones que quieres mover!"></textarea><br>
     </div>
 
     <!--Zona de botones-->
     <div id="botones">
-    <input class= "boton codificar" type="button" id="codificar" value="Cifra">
-    <input class= "boton decodificar" type="button" id="decodificar" value="Descifra"> 
-    <input class= "boton resetear" type="button" id="resetear" value="Limpia">
+      <input class= "boton codificar" type="button" id="codificar" value="Cifra">
+      <input class= "boton decodificar" type="button" id="decodificar" value="Descifra"> 
+      <input class= "boton resetear" type="button" id="resetear" value="Limpia">
     </div>
     <br>
     <!--Zona de resultado-->
     <div class= "texto root" id="root">Tu mensaje está listo para ser copiado: <p id = "resultado"></p>
     </div>
     <br>
-    <br>
+     <br>
     <!--Pie de página-->
-    <footer> Copyright © Danelly Sotomayor</footer>
+  <footer> Copyright © Danelly Sotomayor</footer>
     <script src="cipher.js"></script> 
     <script src="index.js"></script>
   </body>
