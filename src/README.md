@@ -3,6 +3,8 @@
 Para poder intercambiar mensajes secretos, dos personas usan "El Secreto de César" de manera sencilla: el primero cifra el mensaje con la aplicación y le envía el mensaje copiado por WhatsApp a la segunda persona. 
 La segunda persona ingresa a la aplicación y, con el número de posiciones que le dio la primera persona, logra descifrar el mensaje y conocer el secreto.
 
+![interfaz](https://raw.githubusercontent.com/DanellySotomayor/lim-2018-05-bc-core-am-cipher/master/src/img/interfaz-secreto-cesar.jpg "Interfaz")
+
 ### Introducción
 
 El primer proyecto solicitado en Laboratoria es una aplicación para poder cifrar y descifrar mensajes utilizando el conocido [Cifrado César](https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar "conoce más sobre el Cifrado César"), método de cifrado por sustitución en que una letra de un texto es reemplazada por otra letra que se encuentra un número fijo de posiciones más adelante en el alfabeto.
